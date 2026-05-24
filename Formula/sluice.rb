@@ -5,21 +5,21 @@
 class Sluice < Formula
   desc "A streaming log viewer with live filtering"
   homepage "https://github.com/MatthijsvanderPlas/Sluice"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.1/Sluice_Darwin_x86_64.tar.gz"
-      sha256 "d299531ee120b44143d8c7838605f7e2c60cd2d01ea175cbe127991816185ee9"
+      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.2/Sluice_Darwin_x86_64.tar.gz"
+      sha256 "2710303dc8ee5d822f8dc855d839eddae4f37f8efb8cbeb322ec0322fdf2936f"
 
       define_method(:install) do
         bin.install "sluice"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.1/Sluice_Darwin_arm64.tar.gz"
-      sha256 "b3d0971b062a7744f2c4f2b703a39fd77217e4307bda998a9c19749a1beb2a27"
+      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.2/Sluice_Darwin_arm64.tar.gz"
+      sha256 "60fd9db4b83876e8231f4e44ae8ec06ce98684272ff80b43d4d4369dd6583f6c"
 
       define_method(:install) do
         bin.install "sluice"
@@ -29,15 +29,15 @@ class Sluice < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.1/Sluice_Linux_x86_64.tar.gz"
-      sha256 "ee3e44450a5b575a3e72dcba9bd27897299f1b845d8f32e2cb94c5661aabb17c"
+      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.2/Sluice_Linux_x86_64.tar.gz"
+      sha256 "d2b07334f54b5a6c291fe623832c39724161110e44a18447b8419b4b8fdee097"
       define_method(:install) do
         bin.install "sluice"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.1/Sluice_Linux_arm64.tar.gz"
-      sha256 "53671f789174e427476bcc8e122044e3b97af917f8969b30e61f1d3a7fc4a5e6"
+      url "https://github.com/MatthijsvanderPlas/Sluice/releases/download/v0.1.2/Sluice_Linux_arm64.tar.gz"
+      sha256 "929c69828b7768cfddb73ec9485f243b9450d52ae6328bff73fe932701e0aaa2"
       define_method(:install) do
         bin.install "sluice"
       end
